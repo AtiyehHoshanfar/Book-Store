@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-section{
+    background:url(/public/images/vecteezy_girl-with-flying-books-with-magic-glow-in-library_14343287-mobile.jpg) no-repeat;
+
+    background-size: 100% 100%;
+}
+
+@media screen and (min-width:678px) {
+    .hero-section{
+        background:url(/public/images/vecteezy_girl-with-flying-books-with-magic-glow-in-library_14343287.jpg) no-repeat;
+    background-size: 100% 100%;
+
+    }
+    
+}
