@@ -39,3 +39,8 @@
   .wrapper:hover > .back-face{
     transform: rotateY(0deg);
   }
+@media screen and (min-width:480px) {
+  .wrapper{
+margin: 8px;
+  }
+}

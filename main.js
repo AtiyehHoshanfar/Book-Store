@@ -1,12 +1,13 @@
 var swiper = new Swiper(".mySwiper", {
   autoplay: {
     delay: 3000,
+    spaceBetween: 40,
     pauseOnMouseEnter: true
   },
   watchSlidesProgress: true,
   breakpoints: {
     320: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     480: {
       slidesPerView: 3,
