@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "scripts": {
     "tailwind": "postcss ./src/style/css/main.css -o ./public/build/style.css --watch",
-    "sass":"sass --watch ./src/style/scss/main.scss:./public/build/style.scss",
+    "sass": "sass --watch ./src/style/scss/main.scss:./public/build/style.scss",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "autoprefixer": "^10.4.19",
     "postcss-cli": "^11.0.0",
     "sass": "^1.77.4",

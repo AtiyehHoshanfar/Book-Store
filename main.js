@@ -15,11 +15,26 @@ var swiper = new Swiper(".mySwiper", {
     580: {
       slidesPerView: 4,
     },
-    840: {
-      slidesPerView: 5,
-    },
     1424: {
       slidesPerView: 6,
     }
   }
 });
+
+// ! toggle fitler mobile
+ const mobileFilter=document.querySelector(".mobile-filter");
+ const mobileFilterContainer=document.querySelector(".mobile-filter-container");
+
+ let isMobileFilterOpen=false;
+  mobileFilter.addEventListener("click",(e)=>{
+    isMobileFilterOpen=!isMobileFilterOpen;
+    if (isMobileFilterOpen) {
+      mobileFilterContainer.style.height=mobileFilterContainer.scrollHeight+"px";
+      mobileFilterContainer.style.opacity="1";
+    }
+    else{
+      mobileFilterContainer.style.height="0px";
+      mobileFilterContainer.style.opacity="0";
+    }
+
+  })
