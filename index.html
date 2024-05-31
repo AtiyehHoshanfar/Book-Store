@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./vendor/all.min.css">
+    <link rel="stylesheet" href="./vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="./public/build/style.css">
+    <link rel="stylesheet" href="./public/build/style.scss">
     <title>BOOK App</title>
   </head>
   <body class="bg-purple-200">
 <!-- ! Hero Section  -->
-<div class="hero-section h-screen w-full relative">
-  <div class="p-4 md:px-24 md:py-8 flex c">
+<div class="hero-section h-screen w-full relative mb-8">
+  <div class="p-4 md:px-24 md:py-8 flex ">
     <button class="bg-white z-10 w-10 cursor-pointer h-10 md:w-12 md:h-12 shadow rounded-full flex items-center justify-center"><i class="fa-regular fa-user text-purple-500 text-xl pointer-events-none"></i></button>
     <button class="bg-white z-10 mx-1 cursor-pointer w-10 h-10 md:w-12 md:h-12 shadow rounded-full flex items-center justify-center"><i class="fa-solid fa-basket-shopping text-purple-500 text-xl pointer-events-none"></i></button>
     <button class="bg-white z-10 w-10 cursor-pointer h-10 md:w-12 md:h-12 shadow rounded-full flex items-center justify-center "><i class="fa-solid fa-magnifying-glass text-purple-500 text-xl pointer-events-none"></i></button>
@@ -21,7 +23,291 @@
   <button class="bg-orange-500 rounded-full px-4 py-2 md:py-[12px] text-white max-w-40 md:max-w-60 shadow-lg mb-8">Read More</button>
 </div>
 </div>
+<!-- ! BODY -->
+<div class="container mx-auto ">
+  <!-- ! Most Popular Section -->
+  <section class="mb-12 ">
+    <h2 class="text-purple-900 text-3xl md:text-4xl font-bold mb-2"> Most Popular Books</h2>
+    <div class="swiper mySwiper ">
+      <div class="swiper-wrapper">
+    <div  class="swiper-slide wrapper w-full h-80 relative m-2">
+      <!-- ? front card -->
+      <div  class="card front-face absolute w-full h-full  bg-white rounded-xl translate-y-0">
+        <img
+          src="public/images/books/lf (1).webp" class="rounded-xl w-full h-full object-fill">
+        </div>
+    <!-- ? back card  -->
+        <div class="card back-face flex items-center  flex-col p-2  absolute w-full h-full bg-white  rounded-xl">
+        <div class="info flex justify-center flex-col p-2 relative   w-full h-full">
+          <div>
+            <!-- ? book title -->
+            <div class="title text-purple-900 font-bold text-2xl">The Dixon Rule </div>
+            <!-- ? book author -->
+            <p class="text-purple-600 font-medium text-md">Elle Kennedy </p>
+          </div>
+          <button class=" p-2 absolute w-full  bottom-0 right-0  rounded-md bg-purple-500 text-white ">Add To Cart</button>
+          <button class="w-10 h-10 rounded-full absolute top-0 right-0 bg-red-50">❤️</button>
+        </div>
+    
+      </div>
+    
+    </div>
+    <div  class="swiper-slide wrapper w-full h-80 relative m-2">
+      <!-- ? front card -->
+      <div  class="card front-face absolute w-full h-full  bg-white rounded-xl translate-y-0">
+        <img
+          src="public/images/books/lf (1).webp" class="rounded-xl w-full h-full object-fill">
+        </div>
+    <!-- ? back card  -->
+        <div class="card back-face flex items-center  flex-col p-2  absolute w-full h-full bg-white  rounded-xl">
+        <div class="info flex justify-center flex-col p-2 relative   w-full h-full">
+          <div>
+            <!-- ? book title -->
+            <div class="title text-purple-900 font-bold text-2xl">The Dixon Rule </div>
+            <!-- ? book author -->
+            <p class="text-purple-600 font-medium text-md">Elle Kennedy </p>
+          </div>
+          <button class=" p-2 absolute w-full  bottom-0 right-0  rounded-md bg-purple-500 text-white ">Add To Cart</button>
+          <button class="w-10 h-10 rounded-full absolute top-0 right-0 bg-red-50">❤️</button>
+        </div>
+    
+      </div>
+    
+    </div> 
+     <div  class="swiper-slide wrapper w-full h-80 relative m-2">
+      <!-- ? front card -->
+      <div  class="card front-face absolute w-full h-full  bg-white rounded-xl translate-y-0">
+        <img
+          src="public/images/books/lf (1).webp" class="rounded-xl w-full h-full object-fill">
+        </div>
+    <!-- ? back card  -->
+        <div class="card back-face flex items-center  flex-col p-2  absolute w-full h-full bg-white  rounded-xl">
+        <div class="info flex justify-center flex-col p-2 relative   w-full h-full">
+          <div>
+            <!-- ? book title -->
+            <div class="title text-purple-900 font-bold text-2xl">The Dixon Rule </div>
+            <!-- ? book author -->
+            <p class="text-purple-600 font-medium text-md">Elle Kennedy </p>
+          </div>
+          <button class=" p-2 absolute w-full  bottom-0 right-0  rounded-md bg-purple-500 text-white ">Add To Cart</button>
+          <button class="w-10 h-10 rounded-full absolute top-0 right-0 bg-red-50">❤️</button>
+        </div>
+    
+      </div>
+    
+    </div> 
+     <div  class="swiper-slide wrapper w-full h-80 relative m-2">
+      <!-- ? front card -->
+      <div  class="card front-face absolute w-full h-full  bg-white rounded-xl translate-y-0">
+        <img
+          src="public/images/books/lf (1).webp" class="rounded-xl w-full h-full object-fill">
+        </div>
+    <!-- ? back card  -->
+        <div class="card back-face flex items-center  flex-col p-2  absolute w-full h-full bg-white  rounded-xl">
+        <div class="info flex justify-center flex-col p-2 relative   w-full h-full">
+          <div>
+            <!-- ? book title -->
+            <div class="title text-purple-900 font-bold text-2xl">The Dixon Rule </div>
+            <!-- ? book author -->
+            <p class="text-purple-600 font-medium text-md">Elle Kennedy </p>
+          </div>
+          <button class=" p-2 absolute w-full  bottom-0 right-0  rounded-md bg-purple-500 text-white ">Add To Cart</button>
+          <button class="w-10 h-10 rounded-full absolute top-0 right-0 bg-red-50">❤️</button>
+        </div>
+    
+      </div>
+    
+    </div> 
+     <div  class="swiper-slide wrapper w-full h-80 relative m-2">
+      <!-- ? front card -->
+      <div  class="card front-face absolute w-full h-full  bg-white rounded-xl translate-y-0">
+        <img
+          src="public/images/books/lf (1).webp" class="rounded-xl w-full h-full object-fill">
+        </div>
+    <!-- ? back card  -->
+        <div class="card back-face flex items-center  flex-col p-2  absolute w-full h-full bg-white  rounded-xl">
+        <div class="info flex justify-center flex-col p-2 relative   w-full h-full">
+          <div>
+            <!-- ? book title -->
+            <div class="title text-purple-900 font-bold text-2xl">The Dixon Rule </div>
+            <!-- ? book author -->
+            <p class="text-purple-600 font-medium text-md">Elle Kennedy </p>
+          </div>
+          <button class=" p-2 absolute w-full  bottom-0 right-0  rounded-md bg-purple-500 text-white ">Add To Cart</button>
+          <button class="w-10 h-10 rounded-full absolute top-0 right-0 bg-red-50">❤️</button>
+        </div>
+    
+      </div>
+    
+    </div>
+      <div  class="swiper-slide wrapper w-full h-80 relative m-2">
+      <!-- ? front card -->
+      <div  class="card front-face absolute w-full h-full  bg-white rounded-xl translate-y-0">
+        <img
+          src="public/images/books/lf (1).webp" class="rounded-xl w-full h-full object-fill">
+        </div>
+    <!-- ? back card  -->
+        <div class="card back-face flex items-center  flex-col p-2  absolute w-full h-full bg-white  rounded-xl">
+        <div class="info flex justify-center flex-col p-2 relative   w-full h-full">
+          <div>
+            <!-- ? book title -->
+            <div class="title text-purple-900 font-bold text-2xl">The Dixon Rule </div>
+            <!-- ? book author -->
+            <p class="text-purple-600 font-medium text-md">Elle Kennedy </p>
+          </div>
+          <button class=" p-2 absolute w-full  bottom-0 right-0  rounded-md bg-purple-500 text-white ">Add To Cart</button>
+          <button class="w-10 h-10 rounded-full absolute top-0 right-0 bg-red-50">❤️</button>
+        </div>
+    
+      </div>
+    
+    </div> 
+     <div  class="swiper-slide wrapper w-full h-80 relative m-2">
+      <!-- ? front card -->
+      <div  class="card front-face absolute w-full h-full  bg-white rounded-xl translate-y-0">
+        <img
+          src="public/images/books/lf (1).webp" class="rounded-xl w-full h-full object-fill">
+        </div>
+    <!-- ? back card  -->
+        <div class="card back-face flex items-center  flex-col p-2  absolute w-full h-full bg-white  rounded-xl">
+        <div class="info flex justify-center flex-col p-2 relative   w-full h-full">
+          <div>
+            <!-- ? book title -->
+            <div class="title text-purple-900 font-bold text-2xl">The Dixon Rule </div>
+            <!-- ? book author -->
+            <p class="text-purple-600 font-medium text-md">Elle Kennedy </p>
+          </div>
+          <button class=" p-2 absolute w-full  bottom-0 right-0  rounded-md bg-purple-500 text-white ">Add To Cart</button>
+          <button class="w-10 h-10 rounded-full absolute top-0 right-0 bg-red-50">❤️</button>
+        </div>
+    
+      </div>
+    
+    </div> 
+     <div  class="swiper-slide wrapper w-full h-80 relative m-2">
+      <!-- ? front card -->
+      <div  class="card front-face absolute w-full h-full  bg-white rounded-xl translate-y-0">
+        <img
+          src="public/images/books/lf (1).webp" class="rounded-xl w-full h-full object-fill">
+        </div>
+    <!-- ? back card  -->
+        <div class="card back-face flex items-center  flex-col p-2  absolute w-full h-full bg-white  rounded-xl">
+        <div class="info flex justify-center flex-col p-2 relative   w-full h-full">
+          <div>
+            <!-- ? book title -->
+            <div class="title text-purple-900 font-bold text-2xl">The Dixon Rule </div>
+            <!-- ? book author -->
+            <p class="text-purple-600 font-medium text-md">Elle Kennedy </p>
+          </div>
+          <button class=" p-2 absolute w-full  bottom-0 right-0  rounded-md bg-purple-500 text-white ">Add To Cart</button>
+          <button class="w-10 h-10 rounded-full absolute top-0 right-0 bg-red-50">❤️</button>
+        </div>
+    
+      </div>
+    
+    </div> 
+     <div  class="swiper-slide wrapper w-full h-80 relative m-2">
+      <!-- ? front card -->
+      <div  class="card front-face absolute w-full h-full  bg-white rounded-xl translate-y-0">
+        <img
+          src="public/images/books/lf (1).webp" class="rounded-xl w-full h-full object-fill">
+        </div>
+    <!-- ? back card  -->
+        <div class="card back-face flex items-center  flex-col p-2  absolute w-full h-full bg-white  rounded-xl">
+        <div class="info flex justify-center flex-col p-2 relative   w-full h-full">
+          <div>
+            <!-- ? book title -->
+            <div class="title text-purple-900 font-bold text-2xl">The Dixon Rule </div>
+            <!-- ? book author -->
+            <p class="text-purple-600 font-medium text-md">Elle Kennedy </p>
+          </div>
+          <button class=" p-2 absolute w-full  bottom-0 right-0  rounded-md bg-purple-500 text-white ">Add To Cart</button>
+          <button class="w-10 h-10 rounded-full absolute top-0 right-0 bg-red-50">❤️</button>
+        </div>
+    
+      </div>
+    
+    </div> 
+     <div  class="swiper-slide wrapper w-full h-80 relative m-2">
+      <!-- ? front card -->
+      <div  class="card front-face absolute w-full h-full  bg-white rounded-xl translate-y-0">
+        <img
+          src="public/images/books/lf (1).webp" class="rounded-xl w-full h-full object-fill">
+        </div>
+    <!-- ? back card  -->
+        <div class="card back-face flex items-center  flex-col p-2  absolute w-full h-full bg-white  rounded-xl">
+        <div class="info flex justify-center flex-col p-2 relative   w-full h-full">
+          <div>
+            <!-- ? book title -->
+            <div class="title text-purple-900 font-bold text-2xl">The Dixon Rule </div>
+            <!-- ? book author -->
+            <p class="text-purple-600 font-medium text-md">Elle Kennedy </p>
+          </div>
+          <button class=" p-2 absolute w-full  bottom-0 right-0  rounded-md bg-purple-500 text-white ">Add To Cart</button>
+          <button class="w-10 h-10 rounded-full absolute top-0 right-0 bg-red-50">❤️</button>
+        </div>
+    
+      </div>
+    
+    </div> 
+     <div  class="swiper-slide wrapper w-full h-80 relative m-2">
+      <!-- ? front card -->
+      <div  class="card front-face absolute w-full h-full  bg-white rounded-xl translate-y-0">
+        <img
+          src="public/images/books/lf (1).webp" class="rounded-xl w-full h-full object-fill">
+        </div>
+    <!-- ? back card  -->
+        <div class="card back-face flex items-center  flex-col p-2  absolute w-full h-full bg-white  rounded-xl">
+        <div class="info flex justify-center flex-col p-2 relative   w-full h-full">
+          <div>
+            <!-- ? book title -->
+            <div class="title text-purple-900 font-bold text-2xl">The Dixon Rule </div>
+            <!-- ? book author -->
+            <p class="text-purple-600 font-medium text-md">Elle Kennedy </p>
+          </div>
+          <button class=" p-2 absolute w-full  bottom-0 right-0  rounded-md bg-purple-500 text-white ">Add To Cart</button>
+          <button class="w-10 h-10 rounded-full absolute top-0 right-0 bg-red-50">❤️</button>
+        </div>
+    
+      </div>
+    
+    </div> 
+     <div  class="swiper-slide wrapper w-full h-80 relative m-2">
+      <!-- ? front card -->
+      <div  class="card front-face absolute w-full h-full  bg-white rounded-xl translate-y-0">
+        <img
+          src="public/images/books/lf (1).webp" class="rounded-xl w-full h-full object-fill">
+        </div>
+    <!-- ? back card  -->
+        <div class="card back-face flex items-center  flex-col p-2  absolute w-full h-full bg-white  rounded-xl">
+        <div class="info flex justify-center flex-col p-2 relative   w-full h-full">
+          <div>
+            <!-- ? book title -->
+            <div class="title text-purple-900 font-bold text-2xl">The Dixon Rule </div>
+            <!-- ? book author -->
+            <p class="text-purple-600 font-medium text-md">Elle Kennedy </p>
+          </div>
+          <button class=" p-2 absolute w-full  bottom-0 right-0  rounded-md bg-purple-500 text-white ">Add To Cart</button>
+          <button class="w-10 h-10 rounded-full absolute top-0 right-0 bg-red-50">❤️</button>
+        </div>
+    
+      </div>
+    
+    </div>
+  </div>
+  </div>
+  </section>
+</div>
+<!-- ! Single Book Card -->
+
+
+
 <script src="./vendor/all.min.js"></script>
+<script src="./vendor/swiper-bundle.min.js"></script>
     <script  src="/main.js"></script>
   </body>
 </html>
+
+
+
+

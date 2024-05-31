@@ -3,17 +3,39 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* ! hero image */
 .hero-section{
-    background:url(/public/images/vecteezy_girl-with-flying-books-with-magic-glow-in-library_14343287-mobile.jpg) no-repeat;
+    background:url(/public/images/hero/vecteezy_girl-with-flying-books-with-magic-glow-in-library_14343287-mobile.jpg) no-repeat;
 
     background-size: 100% 100%;
 }
 
 @media screen and (min-width:678px) {
     .hero-section{
-        background:url(/public/images/vecteezy_girl-with-flying-books-with-magic-glow-in-library_14343287.jpg) no-repeat;
+        background:url(/public/images/hero/vecteezy_girl-with-flying-books-with-magic-glow-in-library_14343287.jpg) no-repeat;
     background-size: 100% 100%;
 
     }
     
 }
+/* ! Card Product */
+  .wrapper{
+    transform-style: preserve-3d;
+      perspective: 1000px;
+  }
+  .wrapper .card{
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+  }
+  .back-face{
+    transform: rotateY(180deg);
+  }
+  .wrapper:hover > .front-face{
+    transform: rotateY(-180deg);
+  }
+  .wrapper:hover > .back-face{
+    transform: rotateY(0deg);
+  }

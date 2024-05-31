@@ -434,6 +434,34 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.container{
+  width: 100%;
+}
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
 .pointer-events-none{
   pointer-events: none;
 }
@@ -443,15 +471,37 @@ video {
 .relative{
   position: relative;
 }
+.bottom-0{
+  bottom: 0px;
+}
 .bottom-10{
   bottom: 2.5rem;
+}
+.right-0{
+  right: 0px;
+}
+.top-0{
+  top: 0px;
 }
 .z-10{
   z-index: 10;
 }
+.m-2{
+  margin: 0.5rem;
+}
 .mx-1{
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+}
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.mb-12{
+  margin-bottom: 3rem;
+}
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 .mb-4{
   margin-bottom: 1rem;
@@ -465,6 +515,12 @@ video {
 .h-10{
   height: 2.5rem;
 }
+.h-80{
+  height: 20rem;
+}
+.h-full{
+  height: 100%;
+}
 .h-screen{
   height: 100vh;
 }
@@ -476,6 +532,13 @@ video {
 }
 .max-w-40{
   max-width: 10rem;
+}
+.max-w-screen-lg{
+  max-width: 1024px;
+}
+.translate-y-0{
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .cursor-pointer{
   cursor: pointer;
@@ -495,6 +558,12 @@ video {
 .rounded-full{
   border-radius: 9999px;
 }
+.rounded-md{
+  border-radius: 0.375rem;
+}
+.rounded-xl{
+  border-radius: 0.75rem;
+}
 .bg-orange-500{
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
@@ -503,9 +572,24 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(233 213 255 / var(--tw-bg-opacity));
 }
+.bg-purple-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
+}
+.bg-red-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+}
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.object-fill{
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.p-2{
+  padding: 0.5rem;
 }
 .p-4{
   padding: 1rem;
@@ -517,6 +601,10 @@ video {
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .text-3xl{
   font-size: 1.875rem;
@@ -535,6 +623,14 @@ video {
 .text-purple-500{
   --tw-text-opacity: 1;
   color: rgb(168 85 247 / var(--tw-text-opacity));
+}
+.text-purple-600{
+  --tw-text-opacity: 1;
+  color: rgb(147 51 234 / var(--tw-text-opacity));
+}
+.text-purple-900{
+  --tw-text-opacity: 1;
+  color: rgb(88 28 135 / var(--tw-text-opacity));
 }
 .text-slate-300{
   --tw-text-opacity: 1;
@@ -555,30 +651,45 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+
+/* ! hero image */
 .hero-section{
-    background:url(/public/images/vecteezy_girl-with-flying-books-with-magic-glow-in-library_14343287-mobile.jpg) no-repeat;
+    background:url(/public/images/hero/vecteezy_girl-with-flying-books-with-magic-glow-in-library_14343287-mobile.jpg) no-repeat;
 
     background-size: 100% 100%;
 }
 
 @media screen and (min-width:678px) {
     .hero-section{
-        background:url(/public/images/vecteezy_girl-with-flying-books-with-magic-glow-in-library_14343287.jpg) no-repeat;
+        background:url(/public/images/hero/vecteezy_girl-with-flying-books-with-magic-glow-in-library_14343287.jpg) no-repeat;
     background-size: 100% 100%;
 
     }
     
 }
-
-@media (min-width: 768px){
-  .md\:h-14{
-    height: 3.5rem;
+/* ! Card Product */
+  .wrapper{
+    transform-style: preserve-3d;
+      perspective: 1000px;
   }
+  .wrapper .card{
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+  }
+  .back-face{
+    transform: rotateY(180deg);
+  }
+  .wrapper:hover > .front-face{
+    transform: rotateY(-180deg);
+  }
+  .wrapper:hover > .back-face{
+    transform: rotateY(0deg);
+  }
+  @media (min-width: 768px){
   .md\:h-12{
     height: 3rem;
-  }
-  .md\:w-14{
-    width: 3.5rem;
   }
   .md\:w-12{
     width: 3rem;
@@ -603,6 +714,10 @@ video {
   .md\:py-\[12px\]{
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
   .md\:text-6xl{
     font-size: 3.75rem;
