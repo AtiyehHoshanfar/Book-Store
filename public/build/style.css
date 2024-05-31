@@ -810,11 +810,17 @@ select{
 .top-0{
   top: 0px;
 }
+.top-12{
+  top: 3rem;
+}
 .z-10{
   z-index: 10;
 }
 .m-1{
   margin: 0.25rem;
+}
+.m-2{
+  margin: 0.5rem;
 }
 .mx-1{
   margin-left: 0.25rem;
@@ -823,6 +829,9 @@ select{
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+.-mt-12{
+  margin-top: -3rem;
 }
 .mb-1{
   margin-bottom: 0.25rem;
@@ -848,6 +857,9 @@ select{
 .mt-1{
   margin-top: 0.25rem;
 }
+.mt-12{
+  margin-top: 3rem;
+}
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -869,11 +881,17 @@ select{
 .grid{
   display: grid;
 }
+.hidden{
+  display: none;
+}
 .h-10{
   height: 2.5rem;
 }
 .h-24{
   height: 6rem;
+}
+.h-60{
+  height: 15rem;
 }
 .h-80{
   height: 20rem;
@@ -886,6 +904,9 @@ select{
 }
 .w-10{
   width: 2.5rem;
+}
+.w-56{
+  width: 14rem;
 }
 .w-full{
   width: 100%;
@@ -929,6 +950,9 @@ select{
 }
 .justify-center{
   justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
 }
 .gap-6{
   gap: 1.5rem;
@@ -1004,6 +1028,10 @@ select{
   --tw-bg-opacity: 1;
   background-color: rgb(168 85 247 / var(--tw-bg-opacity));
 }
+.bg-purple-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
+}
 .bg-red-50{
   --tw-bg-opacity: 1;
   background-color: rgb(254 242 242 / var(--tw-bg-opacity));
@@ -1015,6 +1043,9 @@ select{
 .object-fill{
   -o-object-fit: fill;
      object-fit: fill;
+}
+.p-1{
+  padding: 0.25rem;
 }
 .p-2{
   padding: 0.5rem;
@@ -1154,6 +1185,9 @@ select{
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1274,6 +1308,16 @@ select{
   }
 }
 @media (min-width: 768px){
+  .md\:mx-2{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .md\:block{
+    display: block;
+  }
+  .md\:flex{
+    display: flex;
+  }
   .md\:hidden{
     display: none;
   }
@@ -1321,6 +1365,10 @@ select{
   .md\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
+  }
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
   .md\:text-xl{
     font-size: 1.25rem;

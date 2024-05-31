@@ -366,9 +366,210 @@
   <label for="Fiction" class="mb-1 ml-2 text-purple-950">Fiction</label>
 </div>
 </div>
-
 </div>
+</section>
 
+<section class="mb-12 w-full md:flex">
+<!-- ! filter desktop -->
+
+  <div class="m-2 w-56 "> 
+    <div class=" bg-white p-2 z-10  rounded-lg hidden md:block  shadow   ">
+      <!-- ? price -->
+    <div class="flex  flex-col mb-2">
+      <label for="price" class="mb-1 text-purple-950">Price</label>
+    <input type="range" name="price" id="price">
+    </div>
+    <!-- ? age -->
+    <div class="flex  flex-col mb-2 ">
+      <label for="age" class="mb-1 text-purple-950">Age</label>
+    <div class="flex items-center ">
+      <input type="radio" name="age" id="0-4" class="form-radio checked:ring-purple-600 text-purple-600" >
+      <label for="0-4" class="mb-1 ml-2 text-purple-950">0-4 Years</label>
+    </div>
+    <div class="flex items-center ">
+      <input type="radio" name="age" id="3-5" class="form-radio checked:ring-purple-600 text-purple-600" >
+      <label for="3-5" class="mb-1 ml-2 text-purple-950">3-5 Years</label>
+    </div><div class="flex items-center ">
+      <input type="radio" name="age" id="6-8" class="form-radio checked:ring-purple-600 text-purple-600">
+      <label for="6-8" class="mb-1 ml-2 text-purple-950">6-8 Years</label>
+    </div><div class="flex items-center ">
+      <input type="radio" name="age" id="9-12" class="form-radio checked:ring-purple-600 text-purple-600">
+      <label for="9-12" class="mb-1 ml-2 text-purple-950">9-12 Years</label>
+    </div><div class="flex items-center ">
+      <input type="radio" name="age" id="teen" class="form-radio checked:ring-purple-600 text-purple-600">
+      <label for="teen" class="mb-1 ml-2 text-purple-950">teen</label>
+    </div>
+    </div>
+    <!-- ? SPECIAL COLLECTIONS -->
+    <div class="flex  flex-col mb-2 ">
+      <label for="Collections" class="mb-1 text-purple-950">Special Collections </label>
+    <div class="flex items-center ">
+      <input type="radio" name="Collections" id="History" class="form-radio checked:ring-purple-600 text-purple-600" >
+      <label for="History" class="mb-1 ml-2 text-purple-950">History</label>
+    </div>
+    <div class="flex items-center ">
+      <input type="radio" name="Collections" id="Business" class="form-radio checked:ring-purple-600 text-purple-600" >
+      <label for="Business" class="mb-1 ml-2 text-purple-950">Business</label>
+    </div><div class="flex items-center ">
+      <input type="radio" name="Collections" id="Science" class="form-radio checked:ring-purple-600 text-purple-600">
+      <label for="Science" class="mb-1 ml-2 text-purple-950">Science</label>
+    </div><div class="flex items-center ">
+      <input type="radio" name="Collections" id="Novel" class="form-radio checked:ring-purple-600 text-purple-600">
+      <label for="Novel" class="mb-1 ml-2 text-purple-950">Novel</label>
+    </div><div class="flex items-center ">
+      <input type="radio" name="Collections" id="Fiction" class="form-radio checked:ring-purple-600 text-purple-600">
+      <label for="Fiction" class="mb-1 ml-2 text-purple-950">Fiction</label>
+    </div>
+    </div>
+    </div>
+</div>
+<!-- ! Card Book container -->
+
+
+  <div class="card-container flex flex-col w-full  ">
+
+    <div class="mt-12 md:mx-2 ">
+      <div class="bg-white rounded-lg shadow p-2 relative mx-auto">
+        <img class=" -mt-12 top-12 w-full h-60 rounded-md" src="./public/images/books/lf (1).webp" alt="book image">
+        <div  class="p-1 ">
+          <!-- ? description header -->
+      <div class="flex items-center justify-between ">
+        <div class="flex flex-col mb-4">
+          <h2 class="text-purple-900 md:text-xl">Book Title</h2>
+          <h3 class="text-purple-600 md:text-lg">Book Author</h3>
+        </div>
+      <span class="text-purple-900 md:text-xl">4.3⭐</span>
+      </div>
+      <!-- ? description footer -->
+      <div class="flex items-center justify-between">
+      <span class="text-purple-600 md:text-lg">43.00$</span>
+      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 md:mx-2  ">
+      <div class="bg-white rounded-lg shadow p-2 relative mx-auto">
+        <img class=" -mt-12 top-12 w-full h-60 rounded-md" src="./public/images/books/lf (1).webp" alt="book image">
+        <div  class="p-1 ">
+          <!-- ? description header -->
+      <div class="flex items-center justify-between ">
+        <div class="flex flex-col mb-4">
+          <h2 class="text-purple-900 md:text-xl">Book Title</h2>
+          <h3 class="text-purple-600 md:text-lg">Book Author</h3>
+        </div>
+      <span class="text-purple-900 md:text-xl">4.3⭐</span>
+      </div>
+      <!-- ? description footer -->
+      <div class="flex items-center justify-between">
+      <span class="text-purple-600 md:text-lg">43.00$</span>
+      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 md:mx-2  ">
+      <div class="bg-white rounded-lg shadow p-2 relative mx-auto">
+        <img class=" -mt-12 top-12 w-full h-60 rounded-md" src="./public/images/books/lf (2).webp" alt="book image">
+        <div  class="p-1 ">
+          <!-- ? description header -->
+      <div class="flex items-center justify-between ">
+        <div class="flex flex-col mb-4">
+          <h2 class="text-purple-900 md:text-xl">Book Title</h2>
+          <h3 class="text-purple-600 md:text-lg">Book Author</h3>
+        </div>
+      <span class="text-purple-900 md:text-xl">4.3⭐</span>
+      </div>
+      <!-- ? description footer -->
+      <div class="flex items-center justify-between">
+      <span class="text-purple-600 md:text-lg">43.00$</span>
+      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 md:mx-2  ">
+      <div class="bg-white rounded-lg shadow p-2 relative mx-auto">
+        <img class=" -mt-12 top-12 w-full h-60 rounded-md" src="./public/images/books/lf (4).webp" alt="book image">
+        <div  class="p-1 ">
+          <!-- ? description header -->
+      <div class="flex items-center justify-between ">
+        <div class="flex flex-col mb-4">
+          <h2 class="text-purple-900 md:text-xl">Book Title</h2>
+          <h3 class="text-purple-600 md:text-lg">Book Author</h3>
+        </div>
+      <span class="text-purple-900 md:text-xl">4.3⭐</span>
+      </div>
+      <!-- ? description footer -->
+      <div class="flex items-center justify-between">
+      <span class="text-purple-600 md:text-lg">43.00$</span>
+      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 md:mx-2  ">
+      <div class="bg-white rounded-lg shadow p-2 relative mx-auto">
+        <img class=" -mt-12 top-12 w-full h-60 rounded-md" src="./public/images/books/lf (4).webp" alt="book image">
+        <div  class="p-1 ">
+          <!-- ? description header -->
+      <div class="flex items-center justify-between ">
+        <div class="flex flex-col mb-4">
+          <h2 class="text-purple-900 md:text-xl">Book Title</h2>
+          <h3 class="text-purple-600 md:text-lg">Book Author</h3>
+        </div>
+      <span class="text-purple-900 md:text-xl">4.3⭐</span>
+      </div>
+      <!-- ? description footer -->
+      <div class="flex items-center justify-between">
+      <span class="text-purple-600 md:text-lg">43.00$</span>
+      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 md:mx-2  ">
+      <div class="bg-white rounded-lg shadow p-2 relative mx-auto">
+        <img class=" -mt-12 top-12 w-full h-60 rounded-md" src="./public/images/books/lf (4).webp" alt="book image">
+        <div  class="p-1 ">
+          <!-- ? description header -->
+      <div class="flex items-center justify-between ">
+        <div class="flex flex-col mb-4">
+          <h2 class="text-purple-900 md:text-xl">Book Title</h2>
+          <h3 class="text-purple-600 md:text-lg">Book Author</h3>
+        </div>
+      <span class="text-purple-900 md:text-xl">4.3⭐</span>
+      </div>
+      <!-- ? description footer -->
+      <div class="flex items-center justify-between">
+      <span class="text-purple-600 md:text-lg">43.00$</span>
+      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
+      </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 md:mx-2  ">
+      <div class="bg-white rounded-lg shadow p-2 relative ">
+        <img class=" -mt-12 top-12 w-full h-60 rounded-md mx-auto" src="./public/images/books/lf (4).webp" alt="book image">
+        <div  class="p-1 ">
+          <!-- ? description header -->
+      <div class="flex items-center justify-between ">
+        <div class="flex flex-col mb-4">
+          <h2 class="text-purple-900 md:text-xl">Book Title</h2>
+          <h3 class="text-purple-600 md:text-lg">Book Author</h3>
+        </div>
+      <span class="text-purple-900 md:text-xl">4.3⭐</span>
+      </div>
+      <!-- ? description footer -->
+      <div class="flex items-center justify-between">
+      <span class="text-purple-600 md:text-lg">43.00$</span>
+      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
+      </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
 
 
 </section>
