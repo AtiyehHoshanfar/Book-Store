@@ -38,3 +38,25 @@ var swiper = new Swiper(".mySwiper", {
     }
 
   })
+  // ! Routes
+  const profile=document.querySelector("#profile");
+  const cart=document.querySelector("#cart");
+  profile.addEventListener("click",()=>
+    location.href="./signin-signup.html"
+  )
+  cart.addEventListener("click",()=>{
+    location.href="./cart.html"
+  })
+
+  // ! favorite 
+  const favorite=document.querySelector("#favorite");
+  const modal=document.querySelector("#modal")
+  const backdrop=document.querySelector("#backdrop")
+  favorite.addEventListener("click",()=>{
+    modal.classList.add("show-modal")
+
+  })
+  backdrop.addEventListener("click",()=>{
+    modal.classList.remove("show-modal")
+
+  })
