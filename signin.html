@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/vendor/all.min.css" />
+    <link rel="stylesheet" href="./public/build/style.css" />
+    <link rel="stylesheet" href="./public/build/style.scss" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+  <div class="flex">
+      <!-- ! Animation in Desktop -->
+      <div class="div  hidden md:block"></div>
+      <div class="flex h-screen justify-center w-full">
+        <div class="m-4  mt-24 w-full md:w-1/2">
+          <!-- ! switch button -->
+          <div class="mb-12 rounded-full p-4 w-full bg-purple-100 relative">
+            <div class="flex items-center justify-around">
+              <span data-form="signin" class="signin text-purple-800 cursor-pointer">SignIn</span>
+              <span data-form="signup"  class="signup text-purple-800 cursor-pointer">SignUp</span>
+            </div>
+            <div
+              class= " breadcrumbs transition-all duration-500 w-1/2 absolute rounded-full z-20 h-full left-0 top-0 bg-purple-500 bg-opacity-50"
+            ></div>
+          </div>
+          <!-- ! login -->
+          <div id="login-form">
+            <h1 class="text-bold text-4xl text-purple-800 text-center">
+              Welcome back
+            </h1>
+            <h2 class="text-light text-md text-purple-400 mb-8 text-center">
+              Please Enter Your Account details
+            </h2>
+  
+            <form action="signin.php" method="post">
+              <ul>
+                <li class="mb-6">
+                  <label
+                    for="email"
+                    class="block mb-2 text-lg font-bold text-purple-600"
+                    >Email</label
+                  >
+                  <div
+                    class="flex items-center p-2 w-full px-4 bg-purple-100 rounded-full"
+                  >
+                    <i class="fa-solid fa-envelope text-xl text-purple-600"></i>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email..."
+                      class="focus:ring-0 bg-transparent border-0 w-full outline-none text-purple-600 placeholder:text-slate-400"
+                    />
+                  </div>
+                </li>
+                <li class="mb-6">
+                  <label
+                    for="email"
+                    class="mb-2 block text-lg font-bold text-purple-600"
+                    >Password</label
+                  >
+                  <div
+                    class="flex p-2 px-4 bg-purple-100 w-full rounded-full justify-between"
+                  >
+                    <div class="flex items-center  w-full">
+                      <i class="fa-solid fa-key text-xl text-purple-600"></i>
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Password..."
+                        class="focus:ring-0 bg-transparent w-full border-0 outline-none text-purple-600 placeholder:text-slate-400"
+                      />
+                    </div>
+                    <button class="p-2 show-hide-btn-login"><i class="text-purple-600 text-lg fa-solid fa-eye"></i></button>
+                  </div>
+                </li>
+              </ul>
+              <button class="w-full bg-purple-600 text-white p-4 rounded-full">
+                SignIn
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+
+
+  </div>
+
+
+    <script src="/vendor/all.min.js"></script>
+    <script src="/signin-signup.js"></script>
+  </body>
+</html>

@@ -13,10 +13,10 @@
 <!-- ! Hero Section  -->
 <div class="hero-section h-screen w-full relative mb-8">
   <div class="p-4 md:px-24 md:py-8 flex ">
-    <button id="profile" class="bg-white z-10 mx-1 w-10 cursor-pointer h-10 md:w-12 md:h-12 shadow rounded-full flex items-center justify-center"><i class="fa-regular fa-user text-purple-500 text-xl pointer-events-none"></i></button>
-    <button id="cart" class="bg-white z-10 mx-1 cursor-pointer w-10 h-10 md:w-12 md:h-12 shadow rounded-full flex items-center justify-center"><i class="fa-solid fa-basket-shopping text-purple-500 text-xl pointer-events-none"></i></button>
-    <button id="favorite" class="bg-white mx-1 z-10 w-10 cursor-pointer h-10 md:w-12 md:h-12 shadow rounded-full flex items-center justify-center"><i class="fa-regular fa-heart text-purple-500 text-xl pointer-events-none"></i></button>
-    <button id="search" class="bg-white z-10 mx-1 w-10 cursor-pointer h-10 md:w-12 md:h-12 shadow rounded-full flex items-center justify-center "><i class="fa-solid fa-magnifying-glass text-purple-500 text-xl pointer-events-none"></i></button>
+    <a href="http://localhost:8080/book_Store/signup.html" id="profile" class="bg-white z-10 mx-1 w-10 cursor-pointer h-10 md:w-12 md:h-12 shadow rounded-full flex items-center justify-center"><i class="fa-regular fa-user text-purple-500 text-xl pointer-events-none"></i></a>
+    <a href="http://localhost:8080/book_Store/signup.html" id="cart" class="bg-white z-10 mx-1 cursor-pointer w-10 h-10 md:w-12 md:h-12 shadow rounded-full flex items-center justify-center"><i class="fa-solid fa-basket-shopping text-purple-500 text-xl pointer-events-none"></i></a>
+    <button  id="favorite" class="bg-white mx-1 z-10 w-10 cursor-pointer h-10 md:w-12 md:h-12 shadow rounded-full flex items-center justify-center"><i class="fa-regular fa-heart text-purple-500 text-xl pointer-events-none"></i></button>
+    <!-- <a href="http://localhost:8080/book_Store/signup.php" id="search" class="bg-white z-10 mx-1 w-10 cursor-pointer h-10 md:w-12 md:h-12 shadow rounded-full flex items-center justify-center "><i class="fa-solid fa-magnifying-glass text-purple-500 text-xl pointer-events-none"></i></a> -->
   
   </div>
 <div class="flex h-screen md:justify-center justify-end  flex-col px-4 md:px-24 absolute bottom-10">
@@ -427,174 +427,44 @@
 </div>
 <!-- ! Card Book container -->
 
+<div  class="card-container flex flex-col w-full  md:grid md:grid-cols-[repeat(auto-fit,minmax(224px,1fr))] ">
 
-  <div class="card-container flex flex-col w-full md:grid md:grid-cols-[repeat(auto-fit,minmax(224px,1fr))]  ">
 
-    <div class="mt-12 md:mx-2 ">
-      <div class="bg-white rounded-lg shadow p-2 relative mx-auto">
-        <div class="relative">
-        <img class=" -mt-12 top-12 w-full h-60 rounded-md" src="./public/images/books/lf (1).webp" alt="book image">
-        <div  class="p-1 ">
-          <!-- ? description header -->
-      <div class="flex  justify-between ">
-        <div class="flex flex-col mb-4">
-          <h2 class="text-purple-900 md:text-xl">Book Title</h2>
-          <h3 class="text-purple-600 md:text-lg">Book Author</h3>
-        </div>
-      <span class="text-purple-900 md:text-md">4.3⭐</span>
-      </div>
-      <!-- ? description footer -->
-      <div class="flex items-center justify-between">
-      <span class="text-purple-600 md:text-lg">43.00$</span>
-      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
-      <button class="w-10 h-10 rounded-full absolute top-2 right-2 bg-red-50">❤️</button>
-    </div>
-      </div>
-        </div>
-      </div>
-      
-    </div>
-    <div class="mt-12 md:mx-2  ">
-      <div class="bg-white rounded-lg shadow p-2 relative mx-auto">
-        <div class="relative">
-        <img class=" -mt-12 top-12 w-full h-60 rounded-md" src="./public/images/books/lf (1).webp" alt="book image">
-        <div  class="p-1 ">
-          <!-- ? description header -->
-          <div class="flex  justify-between ">
-            <div class="flex flex-col mb-4">
-              <h2 class="text-purple-900 md:text-xl">Book Title</h2>
-              <h3 class="text-purple-600 md:text-lg">Book Author</h3>
-            </div>
-          <span class="text-purple-900 md:text-md">4.3⭐</span>
-          </div>
-      <!-- ? description footer -->
-      <div class="flex items-center justify-between">
-      <span class="text-purple-600 md:text-lg">43.00$</span>
-      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
-      <button class="w-10 h-10 rounded-full absolute top-2 right-2 bg-red-50">❤️</button>
-    </div>
-      </div>
-        </div>
-      </div>
-    </div>
-    <div class="mt-12 md:mx-2  ">
-      <div class="bg-white rounded-lg shadow p-2 relative mx-auto">
-        <div class="relative">
-        <img class=" -mt-12 top-12 w-full h-60 rounded-md" src="./public/images/books/lf (2).webp" alt="book image">
-        <div  class="p-1 ">
-          <!-- ? description header -->
-          <div class="flex  justify-between ">
-            <div class="flex flex-col mb-4">
-              <h2 class="text-purple-900 md:text-xl">Book Title</h2>
-              <h3 class="text-purple-600 md:text-lg">Book Author</h3>
-            </div>
-          <span class="text-purple-900 md:text-md">4.3⭐</span>
-          </div>
-      <!-- ? description footer -->
-      <div class="flex items-center justify-between">
-      <span class="text-purple-600 md:text-lg">43.00$</span>
-      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
-      <button class="w-10 h-10 rounded-full absolute top-2 right-2 bg-red-50">❤️</button>
-    </div>
-      </div>
-        </div>
-      </div>
-    </div>
-    <div class="mt-12 md:mx-2  ">
-      <div class="bg-white rounded-lg shadow p-2 relative mx-auto">
-        <div class="relative">
-        <img class=" -mt-12 top-12 w-full h-60 rounded-md" src="./public/images/books/lf (4).webp" alt="book image">
-        <div  class="p-1 ">
-          <!-- ? description header -->
-          <div class="flex  justify-between ">
-            <div class="flex flex-col mb-4">
-              <h2 class="text-purple-900 md:text-xl">Book Title</h2>
-              <h3 class="text-purple-600 md:text-lg">Book Author</h3>
-            </div>
-          <span class="text-purple-900 md:text-md">4.3⭐</span>
-          </div>
-      <!-- ? description footer -->
-      <div class="flex items-center justify-between">
-      <span class="text-purple-600 md:text-lg">43.00$</span>
-      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
-      <button class="w-10 h-10 rounded-full absolute top-2 right-2 bg-red-50">❤️</button>
-    </div>
-      </div>
-        </div>
-      </div>
-    </div>
-    <div class="mt-12 md:mx-2  ">
-      <div class="bg-white rounded-lg shadow p-2 relative mx-auto">
-      <div class="relative">
-        <img class=" -mt-12 top-12 w-full h-60 rounded-md" src="./public/images/books/lf (4).webp" alt="book image">
-        <div  class="p-1 ">
-          <!-- ? description header -->
-          <div class="flex  justify-between ">
-            <div class="flex flex-col mb-4">
-              <h2 class="text-purple-900 md:text-xl">Book Title</h2>
-              <h3 class="text-purple-600 md:text-lg">Book Author</h3>
-            </div>
-          <span class="text-purple-900 md:text-md">4.3⭐</span>
-          </div>
-      <!-- ? description footer -->
-      <div class="flex items-center justify-between">
-      <span class="text-purple-600 md:text-lg">43.00$</span>
-      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
-      <button class="w-10 h-10 rounded-full absolute top-2 right-2 bg-red-50">❤️</button>
-    </div>
-      </div>
-        </div>
-      </div>
-    </div>
-    <div class="mt-12 md:mx-2  ">
-      <div class="bg-white rounded-lg shadow p-2 relative mx-auto">
-      <div class="relative">
-        <img class=" -mt-12 top-12 w-full h-60 rounded-md" src="./public/images/books/lf (4).webp" alt="book image">
-        <div  class="p-1 ">
-          <!-- ? description header -->
-          <div class="flex  justify-between ">
-            <div class="flex flex-col mb-4">
-              <h2 class="text-purple-900 md:text-xl">Book Title</h2>
-              <h3 class="text-purple-600 md:text-lg">Book Author</h3>
-            </div>
-          <span class="text-purple-900 md:text-md">4.3⭐</span>
-          </div>
-      <!-- ? description footer -->
-      <div class="flex items-center justify-between">
-      <span class="text-purple-600 md:text-lg">43.00$</span>
-      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
-      <button class="w-10 h-10 rounded-full absolute top-2 right-2 bg-red-50">❤️</button>
-    </div>
-      </div>
-        </div>
-      </div>
-    </div>
-    <div class="mt-12 md:mx-2  ">
-      <div class="bg-white rounded-lg shadow p-2 relative ">
-      <div class="relative">
-        <img class=" -mt-12 top-12 w-full h-60 rounded-md mx-auto" src="./public/images/books/lf (4).webp" alt="book image">
-        <div  class="p-1 ">
-          <!-- ? description header -->
-          <div class="flex  justify-between ">
-            <div class="flex flex-col mb-4">
-              <h2 class="text-purple-900 md:text-xl">Book Title</h2>
-              <h3 class="text-purple-600 md:text-lg">Book Author</h3>
-            </div>
-          <span class="text-purple-900 md:text-md">4.3⭐</span>
-          </div>
-      <!-- ? description footer -->
-      <div class="flex items-center justify-between">
-      <span class="text-purple-600 md:text-lg">43.00$</span>
-      <button class="bg-purple-600 text-white px-6 py-2 rounded-md" >Add To Cart</button>
-      <button class="w-10 h-10 rounded-full absolute top-2 right-2 bg-red-50">❤️</button>
-    </div>
-      </div>
-        </div>
-      </div>
-    </div>
-  
-  </div>
 
+
+
+<?php
+$connect = mysqli_connect("localhost", "root", "", "book_store");
+$sql="select * from book";
+$result=mysqli_query($connect,$sql);
+$row=mysqli_fetch_array($result);
+while($row=mysqli_fetch_array($result)) {
+    echo "<div class='mt-12 md:m-2'>";
+    echo "<div class='bg-white rounded-lg shadow p-2 relative mx-auto'>";
+    echo "<div class='relative'>";
+    echo "<img class='-mt-12 top-12 w-full h-60 rounded-md' src='./public/images/books/lf (1).webp' alt='book image'>";
+    echo "<div class='p-1'>";
+    echo "<div class='flex justify-between'>";
+    echo "<div class='flex flex-col mb-4'>";
+    echo "<h2 class='text-purple-900 md:text-xl'>" . $row['Book_Name'] . "</h2>";
+    echo "<h3 class='text-purple-600 md:text-lg'>" . $row['Author_Name'] . "</h3>";
+    echo "</div>";
+    echo "<span class='text-purple-900 md:text-md'>" . $row['Score'] . "⭐</span>";
+    echo "</div>";
+    echo "<div class='flex items-center justify-between'>";
+    echo "<span class='text-purple-600 md:text-lg'>" . $row['Price'] . ".00$</span>";
+    echo "<button class='bg-purple-600 text-white px-6 py-2 rounded-md'>Add To Cart</button>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+    echo "</div>";
+}
+
+mysqli_close($connect);
+?>
+
+    </div>
 
 </section>
 
@@ -650,8 +520,7 @@
                         </div>
   </div>
 </div>
-
-<script src="./vendor/all.min.js"></script>
+ <script src="./vendor/all.min.js"></script>
 <script src="./vendor/swiper-bundle.min.js"></script>
     <script  src="/main.js"></script>
   </body>
